@@ -768,5 +768,12 @@ setTimeout(function(){ (function (d, w, k, o, g) { var n=d.getElementsByTagName(
     	border-color: #A573CC; /* Цвет границы */ 
 	}
 </style> 
+<script>
+	document.addEventListener("EasyNetShopModalOpened", function(event) {
+		if (ens_jQuery('.easynetshop-modal-cart').css('display') != 'none') {
+			ens_jQuery('.fields_number input[name="Дата доставки"]').attr('type', 'date'); 
+		}
+	}, false);
+</script>
 </body>
 </html>
