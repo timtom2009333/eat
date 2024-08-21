@@ -820,5 +820,15 @@ body {
 		display:none;
 	}
 </style>
+<script>
+	document.addEventListener("EasyNetShopGetStatus", function(event) {
+		if(parseInt(ens_jQuery('#enscart_counter').html())!=0) {
+			ens_jQuery('#easynetshop-cart-default').fadeIn(500);
+		}
+		else {
+			ens_jQuery('#easynetshop-cart-default').fadeOut(500);
+		}
+	}, false);
+</script>
 </body>
 </html>
